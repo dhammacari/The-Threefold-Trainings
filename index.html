@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -6,19 +6,22 @@
     <title>DECODE: The Threefold Trainings 3000</title>
     
     <style>
-        /* 1. THE CANVAS: พื้นหลังมืดสนิทเพื่อสร้างสมาธิ */
         :root {
             --bg-color: #0a0a0a;
-            --text-primary: #e0e0e0;
-            --accent-gold: #c5a059; /* สีทองหม่นแบบเครื่องทองโบราณ */
-            --text-dim: #888;
+            --text-primary: #e5e5e5;
+            --accent-gold: #c5a059;
+            --text-dim: #999;
+            /* ขยายขนาดพื้นฐาน */
+            --base-font-size: 20px; 
         }
 
         body {
             background-color: var(--bg-color);
             color: var(--text-primary);
-            font-family: 'Sarabun', 'Georgia', serif; /* ใช้ Font มีหัวเพื่อความภูมิฐาน */
-            line-height: 1.8;
+            font-family: 'Sarabun', 'Georgia', serif;
+            /* เพิ่ม Line-height ให้โปร่งสบาย */
+            line-height: 2; 
+            font-size: var(--base-font-size);
             margin: 0;
             padding: 0;
             display: flex;
@@ -26,67 +29,68 @@
             align-items: center;
         }
 
-        /* 2. THE CONTAINER: จำกัดความกว้างให้อ่านง่ายบนจอ PC (Golden Ratio) */
         main {
-            max-width: 750px;
-            padding: 100px 40px;
+            max-width: 850px; /* ขยายความกว้างเล็กน้อยให้รับกับฟอนต์ที่ใหญ่ขึ้น */
+            padding: 120px 40px;
         }
 
         header {
             border-bottom: 1px solid #333;
-            margin-bottom: 60px;
-            padding-bottom: 20px;
+            margin-bottom: 80px;
+            padding-bottom: 30px;
+            text-align: center;
         }
 
         h1 {
-            font-size: 2.2rem;
+            font-size: 3rem; /* ใหญ่และเด่นชัด */
             color: var(--accent-gold);
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+            font-weight: normal;
         }
 
         .subtitle {
             font-style: italic;
             color: var(--text-dim);
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
 
-        /* 3. THE CONTENT: จัดวางเนื้อหา MQ, EQ, IQ แบบงานวรรณกรรม */
         section {
-            margin-bottom: 80px;
+            margin-bottom: 100px;
         }
 
         h2 {
-            font-size: 1.5rem;
-            border-left: 3px solid var(--accent-gold);
-            padding-left: 20px;
-            margin-bottom: 30px;
+            font-size: 1.8rem;
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 25px;
+            margin-bottom: 40px;
+            color: var(--accent-gold);
+            font-weight: normal;
         }
 
         p {
-            margin-bottom: 25px;
-            text-align: justify; /* จัดชิดขอบซ้ายขวาแบบหนังสือ */
+            margin-bottom: 35px;
+            text-align: justify;
         }
 
-        /* 4. THE CRAFTSMAN'S MARK: ลายเซ็นท้ายงาน */
         footer {
-            margin-top: 100px;
-            padding: 40px;
+            margin-top: 150px;
+            padding: 60px;
             border-top: 1px solid #222;
             width: 100%;
             text-align: center;
             font-family: monospace;
             color: var(--text-dim);
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
         }
 
-        /* เอฟเฟกต์ Fade-in เล็กน้อยเพื่อความนุ่มนวล (Soft Interaction) */
         .fade-in {
-            animation: fadeIn 2s;
+            animation: fadeIn 2.5s ease-out;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
+            from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
@@ -101,24 +105,40 @@
 
         <section id="intro">
             <p>
-                ในยุคสมัยที่อัลกอริทึมทำหน้าที่ตัดสินใจแทนมนุษย์ การย้อนกลับไปหา "แก่น" 
-                ของไตรสิกขา (Threefold Trainings) คือการกู้คืนอิสรภาพที่แท้จริง...
+                ในโลกอนาคตที่ปัญญาประดิษฐ์ก้าวข้ามขีดจำกัดของชีวภาพ การย้อนกลับไปทำความเข้าใจรหัสพื้นฐานของมนุษย์ผ่าน 
+                <strong>"ไตรสิกขา"</strong> ไม่ใช่การถอยหลังเข้าคลอง แต่คือการปักหมุดหมายแห่งวิวัฒนาการที่ยั่งยืน 
+                โปรเจกต์นี้ขอนำเสนอการเชื่อมโยงวิถีแห่งอดีตเข้ากับบริบทแห่งปี 3000
             </p>
         </section>
 
         <section id="mq">
-            <h2>I. MQ: The Ethics of Being (Sila)</h2>
-            <p>[ใส่เนื้อหาภาษาไทย/อังกฤษ ของส่วน MQ ที่นี่]</p>
+            <h2>I. MQ: Moral Intelligence</h2>
+            <p>
+                <strong>ความสุจริตกาย - วาจา (Sila):</strong> ในยุคที่รหัสคอมพิวเตอร์สามารถสร้างตัวตนจำลองได้ไม่รู้จบ 
+                ศีลธรรมคือการรักษาความสัตย์จริงในระดับพื้นฐานที่สุด การสำรวมกายและวาจาในฐานะ User และ Creator 
+                คือเกราะป้องกันไม่ให้จิตวิญญาณถูกกัดกร่อนด้วยอกุศลธรรมทางดิจิทัล นี่คือความฉลาดทางศีลธรรม (MQ) 
+                ที่มั่นคงกว่าระบบความปลอดภัยใดๆ
+            </p>
         </section>
 
         <section id="eq">
-            <h2>II. EQ: The Stability of Mind (Samadhi)</h2>
-            <p>[ใส่เนื้อหาภาษาไทย/อังกฤษ ของส่วน EQ ที่นี่]</p>
+            <h2>II. EQ: Emotional Intelligence</h2>
+            <p>
+                <strong>ความฉลาดทางอารมณ์ (Samadhi):</strong> ท่ามกลางกระแสข้อมูลที่พุ่งพล่านด้วยความเร็วแสง 
+                การฝึกจิตให้ตั้งมั่นและรู้เท่าทันกระแสความรู้สึก (Emotional Intelligence) คือกุญแจสำคัญ 
+                สมาธิในโลกปี 3000 คือการมีอำนาจเหนือการตอบสนองของตนเอง ไม่ตกเป็นทาสของ Algorithm ที่คอยเร้าอารมณ์ 
+                เพื่อให้จิตคงความสงบและมั่นคงประดุจมหาสมุทรที่ลึกซึ้ง
+            </p>
         </section>
 
         <section id="iq">
-            <h2>III. IQ: The Clarity of Causality (Panna)</h2>
-            <p>[ใส่เนื้อหาภาษาไทย/อังกฤษ ของส่วน IQ ที่นี่]</p>
+            <h2>III. IQ: Intellectual Intelligence</h2>
+            <p>
+                <strong>วิปัสสนาปัญญา (Panna):</strong> เมื่อ IQ ไม่ได้วัดกันที่พลังประมวลผลเหมือนเดิมอีกต่อไป 
+                ความฉลาดที่แท้จริงคือการเห็นแจ้งใน 'เหตุและผล' (Causality) ของสรรพสิ่งผ่านวิปัสสนาปัญญา 
+                การเข้าใจความไม่เที่ยง (Anicca) ของเทคโนโลยีและสังขาร คืออาวุธที่ทำให้มนุษย์สามารถดำรงอยู่ได้อย่าง 
+                "ผู้รู้ ผู้ตื่น ผู้เบิกบาน" เหนือกว่าตรรกะเชิงเส้นของ AI ทั้งมวล
+            </p>
         </section>
 
         <footer>
